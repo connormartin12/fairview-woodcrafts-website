@@ -1,11 +1,270 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Home() {
   return (
-    <div className="font-inter grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Button>Click Me</Button>
-      </main>
-    </div>
+    <main className="font-inter flex flex-col w-full gap-24 my-16">
+      {/* Hero */}
+      <section className="flex w-full justify-between items-center">
+        <div className="flex flex-col gap-4">
+          <h1 className="text-5xl">
+            Laser-Engraved Wooden Gifts, <br />
+            Personalized with Care
+          </h1>
+          <div className="flex gap-6">
+            <Button asChild variant="mutedDefault" className="text-md">
+              <Link href="/custom-order">Personalize Your Gift</Link>
+            </Button>
+            <Button className="text-md">
+              <Link href="/shop">Shop All Items</Link>
+            </Button>
+          </div>
+        </div>
+        <Image
+          src="/it-is-well-sign.webp"
+          alt="Hero Image"
+          width={400}
+          height={400}
+          priority
+        />
+      </section>
+
+      {/* Featured Collections */}
+      <section className="bg-secondary w-screen -mx-[calc((100vw-100%)/2)] py-16">
+        <div className="flex flex-col max-w-7xl mx-auto md:px-6 gap-16">
+          <div className="flex w-full justify-between items-center">
+            <div className="relative">
+              <h2 className="text-3xl">Featured Collections</h2>
+              <span className="bg-accent-foreground/70 absolute left-1 bottom-[6px] w-full h-[2px]" />
+            </div>
+            <Button asChild>
+              <Link href="/shop/collections">
+                View All Collections <ArrowRight />
+              </Link>
+            </Button>
+          </div>
+
+          <div className="flex w-full justify-between px-24">
+            <Link href="/shop/collections/cards">
+              <div className="flex flex-col items-center gap-4">
+                <div className="h-[150px] w-[150px] rounded-full bg-secondary relative">
+                  <Image
+                    src="/teacher-beard-card.webp"
+                    alt="Camping card thumbnail"
+                    fill
+                    className="object-cover rounded-full"
+                  />
+                </div>
+                <h3 className="text-xl">Cards</h3>
+              </div>
+            </Link>
+            <Link href="/shop/collections/cards">
+              <div className="flex flex-col items-center gap-4">
+                <div className="h-[150px] w-[150px] rounded-full bg-secondary relative">
+                  <Image
+                    src="/teacher-beard-card.webp"
+                    alt="Camping card thumbnail"
+                    fill
+                    className="object-cover rounded-full"
+                  />
+                </div>
+                <h3 className="text-xl">Cards</h3>
+              </div>
+            </Link>
+            <Link href="/shop/collections/cards">
+              <div className="flex flex-col items-center gap-4">
+                <div className="h-[150px] w-[150px] rounded-full bg-secondary relative">
+                  <Image
+                    src="/teacher-beard-card.webp"
+                    alt="Camping card thumbnail"
+                    fill
+                    className="object-cover rounded-full"
+                  />
+                </div>
+                <h3 className="text-xl">Cards</h3>
+              </div>
+            </Link>
+            <Link href="/shop/collections/cards">
+              <div className="flex flex-col items-center gap-4">
+                <div className="h-[150px] w-[150px] rounded-full bg-secondary relative">
+                  <Image
+                    src="/teacher-beard-card.webp"
+                    alt="Camping card thumbnail"
+                    fill
+                    className="object-cover rounded-full"
+                  />
+                </div>
+                <h3 className="text-xl">Cards</h3>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Best Sellers */}
+      <section className="flex flex-col gap-16 items-center">
+        <div className="flex w-full justify-between items-center">
+          <div className="relative">
+            <h2 className="text-3xl">Best Sellers</h2>
+            <span className="bg-accent-foreground/70 absolute left-1 bottom-[6px] w-full h-[2px]" />
+          </div>
+          <Button asChild variant="mutedDefault">
+            <Link href="/shop/collections">
+              Shop All Items <ArrowRight />
+            </Link>
+          </Button>
+        </div>
+
+        <Carousel className="max-w-6xl">
+          <CarouselContent>
+            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+              <Link href="/shop/puzzle_piece_card_id">
+                <Card className="pt-0 overflow-hidden">
+                  <CardContent className="flex px-0 justify-center items-center">
+                    <AspectRatio ratio={4 / 3}>
+                      <Image
+                        src="/puzzle_piece.webp"
+                        alt="Puzzle piece"
+                        fill
+                        className="object-cover"
+                      />
+                    </AspectRatio>
+                  </CardContent>
+                  <CardFooter className="flex-col items-baseline gap-2">
+                    <p className="font-semibold w-full truncate">
+                      Father&apos;s Day Puzzle Piece Gift Card
+                    </p>
+                    <p className="text-primary font-semibold">$24.00</p>
+                  </CardFooter>
+                </Card>
+              </Link>
+            </CarouselItem>
+            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+              <Link href="/shop/puzzle_piece_card_id">
+                <Card className="pt-0 overflow-hidden">
+                  <CardContent className="flex px-0 justify-center items-center">
+                    <AspectRatio ratio={4 / 3}>
+                      <Image
+                        src="/camping-card.webp"
+                        alt="Puzzle piece"
+                        fill
+                        className="object-cover"
+                      />
+                    </AspectRatio>
+                  </CardContent>
+                  <CardFooter className="flex-col items-baseline gap-2">
+                    <p className="font-semibold w-full truncate">
+                      Camping Father&apos;s Day Card
+                    </p>
+                    <p className="text-primary font-semibold">$15.00</p>
+                  </CardFooter>
+                </Card>
+              </Link>
+            </CarouselItem>
+            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+              <Link href="/shop/puzzle_piece_card_id">
+                <Card className="pt-0 overflow-hidden">
+                  <CardContent className="flex px-0 justify-center items-center">
+                    <AspectRatio ratio={4 / 3}>
+                      <Image
+                        src="/puzzle_piece.webp"
+                        alt="Puzzle piece"
+                        fill
+                        className="object-cover"
+                      />
+                    </AspectRatio>
+                  </CardContent>
+                  <CardFooter className="flex-col items-baseline gap-2">
+                    <p className="font-semibold w-full truncate">
+                      Father&apos;s Day Puzzle Piece Gift
+                    </p>
+                    <p className="text-primary font-semibold">$24.00</p>
+                  </CardFooter>
+                </Card>
+              </Link>
+            </CarouselItem>
+            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+              <Link href="/shop/puzzle_piece_card_id">
+                <Card className="pt-0 overflow-hidden">
+                  <CardContent className="flex px-0 justify-center items-center">
+                    <AspectRatio ratio={4 / 3}>
+                      <Image
+                        src="/puzzle_piece.webp"
+                        alt="Puzzle piece"
+                        fill
+                        className="object-cover"
+                      />
+                    </AspectRatio>
+                  </CardContent>
+                  <CardFooter className="flex-col items-baseline gap-2">
+                    <p className="font-semibold w-full truncate">
+                      Father&apos;s Day Puzzle Piece Gift
+                    </p>
+                    <p className="text-primary font-semibold">$24.00</p>
+                  </CardFooter>
+                </Card>
+              </Link>
+            </CarouselItem>
+            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+              <Link href="/shop/puzzle_piece_card_id">
+                <Card className="pt-0 overflow-hidden">
+                  <CardContent className="flex px-0 justify-center items-center">
+                    <AspectRatio ratio={4 / 3}>
+                      <Image
+                        src="/puzzle_piece.webp"
+                        alt="Wooden puzzle piece father's day gift"
+                        fill
+                        className="object-cover"
+                      />
+                    </AspectRatio>
+                  </CardContent>
+                  <CardFooter className="flex-col items-baseline gap-2">
+                    <p className="font-semibold w-full truncate">
+                      Father&apos;s Day Puzzle Piece Gift
+                    </p>
+                    <p className="text-primary font-semibold">$24.00</p>
+                  </CardFooter>
+                </Card>
+              </Link>
+            </CarouselItem>
+            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+              <Link href="/shop/puzzle_piece_card_id">
+                <Card className="pt-0 overflow-hidden">
+                  <CardContent className="flex px-0 justify-center items-center">
+                    <AspectRatio ratio={4 / 3}>
+                      <Image
+                        src="/puzzle_piece.webp"
+                        alt="Puzzle piece"
+                        fill
+                        className="object-cover"
+                      />
+                    </AspectRatio>
+                  </CardContent>
+                  <CardFooter className="flex-col items-baseline gap-2">
+                    <p className="font-semibold w-full truncate">
+                      Father&apos;s Day Puzzle Piece Gift
+                    </p>
+                    <p className="text-primary font-semibold">$24.00</p>
+                  </CardFooter>
+                </Card>
+              </Link>
+            </CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </section>
+    </main>
   );
 }

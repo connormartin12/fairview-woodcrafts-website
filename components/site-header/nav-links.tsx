@@ -51,15 +51,15 @@ export default function NavLinks() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link href="/faq" className={navigationMenuTriggerStyle()}>
-              FAQ
+            <Link href="/contact-us" className={navigationMenuTriggerStyle()}>
+              Contact Us
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link href="/contact-us" className={navigationMenuTriggerStyle()}>
-              Contact Us
+            <Link href="/faq" className={navigationMenuTriggerStyle()}>
+              FAQ
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
