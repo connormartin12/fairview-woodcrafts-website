@@ -42,11 +42,11 @@ export default function Home() {
 
       {/* Featured Collections */}
       <section className="bg-secondary w-screen -mx-[calc((100vw-100%)/2)] py-16">
-        <div className="flex flex-col max-w-7xl mx-auto md:px-6 gap-16">
-          <div className="flex w-full justify-between items-center">
+        <div className="flex flex-col max-w-7xl mx-auto px-6 lg:px-2 gap-16">
+          <div className="flex flex-col gap-2 sm:flex-row w-full justify-between md:items-center">
             <div className="relative">
               <h2 className="text-3xl">Featured Collections</h2>
-              <span className="bg-accent-foreground/70 absolute left-1 bottom-[6px] w-full h-[2px]" />
+              <span className="bg-accent-foreground/70 absolute left-1 bottom-[6px] w-66 h-[2px]" />
             </div>
             <Button asChild>
               <Link href="/shop/collections">
@@ -55,10 +55,10 @@ export default function Home() {
             </Button>
           </div>
 
-          <div className="flex w-full justify-between px-24">
+          <div className="flex flex-wrap lg:flex-row w-full gap-8 justify-center md:justify-between md:px-24">
             <Link href="/shop/collections/cards">
               <div className="flex flex-col items-center gap-4">
-                <div className="h-[150px] w-[150px] rounded-full bg-secondary relative">
+                <div className="h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
                   <Image
                     src="/teacher-beard-card.webp"
                     alt="Camping card thumbnail"
@@ -71,7 +71,7 @@ export default function Home() {
             </Link>
             <Link href="/shop/collections/cards">
               <div className="flex flex-col items-center gap-4">
-                <div className="h-[150px] w-[150px] rounded-full bg-secondary relative">
+                <div className="h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
                   <Image
                     src="/teacher-beard-card.webp"
                     alt="Camping card thumbnail"
@@ -84,7 +84,7 @@ export default function Home() {
             </Link>
             <Link href="/shop/collections/cards">
               <div className="flex flex-col items-center gap-4">
-                <div className="h-[150px] w-[150px] rounded-full bg-secondary relative">
+                <div className="h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
                   <Image
                     src="/teacher-beard-card.webp"
                     alt="Camping card thumbnail"
@@ -97,7 +97,7 @@ export default function Home() {
             </Link>
             <Link href="/shop/collections/cards">
               <div className="flex flex-col items-center gap-4">
-                <div className="h-[150px] w-[150px] rounded-full bg-secondary relative">
+                <div className="h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
                   <Image
                     src="/teacher-beard-card.webp"
                     alt="Camping card thumbnail"
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* Best Sellers */}
-      <section className="flex flex-col gap-16 items-center">
+      <section className="flex flex-col gap-16">
         <div className="flex w-full justify-between items-center">
           <div className="relative">
             <h2 className="text-3xl">Best Sellers</h2>
@@ -126,9 +126,9 @@ export default function Home() {
           </Button>
         </div>
 
-        <Carousel className="max-w-6xl">
+        <Carousel className="mx-16">
           <CarouselContent>
-            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+            <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
               <Link href="/shop/puzzle_piece_card_id">
                 <Card className="pt-0 overflow-hidden">
                   <CardContent className="flex px-0 justify-center items-center">
@@ -150,7 +150,7 @@ export default function Home() {
                 </Card>
               </Link>
             </CarouselItem>
-            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+            <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
               <Link href="/shop/puzzle_piece_card_id">
                 <Card className="pt-0 overflow-hidden">
                   <CardContent className="flex px-0 justify-center items-center">
@@ -172,7 +172,7 @@ export default function Home() {
                 </Card>
               </Link>
             </CarouselItem>
-            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+            <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
               <Link href="/shop/puzzle_piece_card_id">
                 <Card className="pt-0 overflow-hidden">
                   <CardContent className="flex px-0 justify-center items-center">
@@ -194,7 +194,7 @@ export default function Home() {
                 </Card>
               </Link>
             </CarouselItem>
-            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+            <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
               <Link href="/shop/puzzle_piece_card_id">
                 <Card className="pt-0 overflow-hidden">
                   <CardContent className="flex px-0 justify-center items-center">
@@ -216,7 +216,7 @@ export default function Home() {
                 </Card>
               </Link>
             </CarouselItem>
-            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+            <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
               <Link href="/shop/puzzle_piece_card_id">
                 <Card className="pt-0 overflow-hidden">
                   <CardContent className="flex px-0 justify-center items-center">
@@ -238,7 +238,7 @@ export default function Home() {
                 </Card>
               </Link>
             </CarouselItem>
-            <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4">
+            <CarouselItem className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
               <Link href="/shop/puzzle_piece_card_id">
                 <Card className="pt-0 overflow-hidden">
                   <CardContent className="flex px-0 justify-center items-center">
@@ -261,8 +261,8 @@ export default function Home() {
               </Link>
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="-left-16" />
+          <CarouselNext className="-right-16" />
         </Carousel>
       </section>
     </main>

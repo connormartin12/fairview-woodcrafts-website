@@ -6,8 +6,8 @@ import Image from "next/image";
 
 export default function SiteHeader() {
   return (
-    <>
-      <div className="flex w-full items-center justify-between py-1">
+    <header className="sticky top-0 bg-background z-99 flex flex-col items-center w-screen -mx-[calc((100vw-100%)/2)]">
+      <div className="flex items-center justify-between py-1 max-w-7xl w-full mx-auto px-6 lg:px-2">
         <Link href="/">
           <Image
             src="/fw_logo.webp"
@@ -23,7 +23,7 @@ export default function SiteHeader() {
           </Link>
         </Button>
       </div>
-      <span className="w-screen h-[2px] bg-border" />
-    </>
+      <span className="w-full h-[2px] bg-border" />
+    </header>
   );
 }

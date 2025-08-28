@@ -28,11 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-7xl mx-auto md:px-6`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-7xl mx-auto px-6 lg:px-2`}
       >
-        <header className="flex flex-col min-w-full w-full items-center">
-          <SiteHeader />
-        </header>
+        <SiteHeader />
         {children}
         <footer className="flex w-full max-h-[100px] justify-center mt-auto">
           footer placeholder
