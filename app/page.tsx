@@ -16,13 +16,13 @@ export default function Home() {
   return (
     <main className="font-inter flex flex-col w-full gap-24 my-16">
       {/* Hero */}
-      <section className="flex w-full justify-between items-center">
-        <div className="flex flex-col gap-4">
+      <section className="flex flex-col md:flex-row gap-16 md:gap-8 text-center md:text-left w-full justify-between items-center">
+        <div className="flex flex-col gap-4 items-center md:items-baseline">
           <h1 className="text-5xl">
             Laser-Engraved Wooden Gifts, <br />
             Personalized with Care
           </h1>
-          <div className="flex gap-6">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
             <Button asChild variant="mutedDefault" className="text-md">
               <Link href="/custom-order">Personalize Your Gift</Link>
             </Button>
@@ -42,12 +42,11 @@ export default function Home() {
 
       {/* Featured Collections */}
       <section className="bg-secondary w-screen -mx-[calc((100vw-100%)/2)] py-16">
-        <div className="flex flex-col max-w-7xl mx-auto px-6 lg:px-2 gap-16">
+        <div className="flex flex-col max-w-7xl mx-auto px-6 gap-16">
           <div className="flex flex-col gap-2 sm:flex-row w-full justify-between md:items-center">
-            <div className="relative">
-              <h2 className="text-3xl">Featured Collections</h2>
-              <span className="bg-accent-foreground/70 absolute left-1 bottom-[6px] w-66 h-[2px]" />
-            </div>
+            <h2 className="text-3xl underline decoration-accent-foreground/70 decoration-2">
+              Featured Collections
+            </h2>
             <Button asChild>
               <Link href="/shop/collections">
                 View All Collections <ArrowRight />
@@ -114,11 +113,10 @@ export default function Home() {
 
       {/* Best Sellers */}
       <section className="flex flex-col gap-16">
-        <div className="flex w-full justify-between items-center">
-          <div className="relative">
-            <h2 className="text-3xl">Best Sellers</h2>
-            <span className="bg-accent-foreground/70 absolute left-1 bottom-[6px] w-full h-[2px]" />
-          </div>
+        <div className="flex flex-col gap-2 sm:flex-row w-full justify-between md:items-center">
+          <h2 className="text-3xl underline decoration-accent-foreground/70 decoration-2">
+            Best Sellers
+          </h2>
           <Button asChild variant="mutedDefault">
             <Link href="/shop/collections">
               Shop All Items <ArrowRight />

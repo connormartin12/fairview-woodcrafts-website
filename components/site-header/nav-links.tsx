@@ -11,14 +11,45 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-export default function NavLinks() {
+export default function NavLinks({
+  className,
+  mobile = false,
+}: {
+  className?: string;
+  mobile?: boolean;
+}) {
+  if (mobile) {
+    return (
+      <ul className={className}>
+        <li>
+          <Link href="/shop">Shop</Link>
+        </li>
+        <li>
+          <Link href="/shop/collections">Collections</Link>
+        </li>
+        <li>
+          <Link href="/shop/custom-order">Custom Order</Link>
+        </li>
+        <li>
+          <Link href="/gallery">Gallery</Link>
+        </li>
+        <li>
+          <Link href="/about">About</Link>
+        </li>
+        <li>
+          <Link href="/contact-us">Contact Us</Link>
+        </li>
+        <li>
+          <Link href="/faq">FAQ</Link>
+        </li>
+      </ul>
+    );
+  }
   return (
-    <NavigationMenu viewport={false}>
+    <NavigationMenu viewport={false} className={className}>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>
-            <Link href="/shop">Shop</Link>
-          </NavigationMenuTrigger>
+          <NavigationMenuTrigger>Shop</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[200px] gap-4">
               <li>
