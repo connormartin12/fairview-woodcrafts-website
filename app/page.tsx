@@ -280,7 +280,7 @@ export default function Home() {
               <p className="text-lg">
                 Browse our gallery of custom work for inspiration, start a
                 custom order based on our popular options, or contact us to
-                design something truly unique.
+                design something truly unique!
               </p>
             </div>
 
