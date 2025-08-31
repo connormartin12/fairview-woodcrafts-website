@@ -10,48 +10,21 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
 
-export default function NavLinks({
-  className,
-  mobile = false,
-}: {
-  className?: string;
-  mobile?: boolean;
-}) {
-  if (mobile) {
-    return (
-      <ul className={className}>
-        <li>
-          <Link href="/shop">Shop</Link>
-        </li>
-        <li>
-          <Link href="/shop/collections">Collections</Link>
-        </li>
-        <li>
-          <Link href="/shop/custom-order">Custom Order</Link>
-        </li>
-        <li>
-          <Link href="/gallery">Gallery</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/contact-us">Contact Us</Link>
-        </li>
-        <li>
-          <Link href="/faq">FAQ</Link>
-        </li>
-      </ul>
-    );
-  }
+export default function NavLinks({ mobile = false }: { mobile?: boolean }) {
   return (
-    <NavigationMenu viewport={false} className={className}>
-      <NavigationMenuList>
+    <NavigationMenu
+      viewport={false}
+      className="flex flex-col md:flex-row justify-start md:justify-center"
+    >
+      <NavigationMenuList className="flex flex-col md:flex-row items-baseline justify-start">
         <NavigationMenuItem>
           <NavigationMenuTrigger>Shop</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[200px] gap-4">
+          <NavigationMenuContent
+            className={cn("ml-4 md:ml-0", mobile && "!shadow-none border-none")}
+          >
+            <ul className="grid w-[200px] gap-4 text-foreground">
               <li>
                 <NavigationMenuLink asChild>
                   <Link href="/shop">Shop All Items</Link>
