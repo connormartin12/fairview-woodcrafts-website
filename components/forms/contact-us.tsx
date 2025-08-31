@@ -61,7 +61,7 @@ export default function ContactUsForm() {
               <FormItem className="basis-1/2 w-full">
                 <FormLabel>First name</FormLabel>
                 <FormControl>
-                  <Input placeholder="First name" {...field} />
+                  <Input type="text" placeholder="First name" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -74,7 +74,7 @@ export default function ContactUsForm() {
               <FormItem className="basis-1/2 w-full">
                 <FormLabel>Last name</FormLabel>
                 <FormControl>
-                  <Input placeholder="Last name" {...field} />
+                  <Input type="text" placeholder="Last name" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -88,7 +88,7 @@ export default function ContactUsForm() {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder="Email" {...field} />
+                <Input type="email" placeholder="Email" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
