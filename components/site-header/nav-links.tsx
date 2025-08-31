@@ -22,7 +22,10 @@ export default function NavLinks({ mobile = false }: { mobile?: boolean }) {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Shop</NavigationMenuTrigger>
           <NavigationMenuContent
-            className={cn("ml-4 md:ml-0", mobile && "!shadow-none border-none")}
+            className={cn(
+              "ml-4 md:ml-0 w-fit",
+              mobile && "!shadow-none border-none"
+            )}
           >
             <ul className="grid w-[200px] gap-4 text-foreground">
               <li>

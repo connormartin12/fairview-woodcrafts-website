@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import ContactUsForm from "@/components/forms/contact-us";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
@@ -261,6 +263,46 @@ export default function Home() {
           <CarouselPrevious className="-left-16" />
           <CarouselNext className="-right-16" />
         </Carousel>
+      </section>
+
+      <section className="bg-secondary w-screen -mx-[calc((100vw-100%)/2)] py-12 md:py-20">
+        <div className="flex flex-col md:flex-row md:justify-between max-w-7xl mx-auto px-6 gap-12 md:gap-24 lg:gap-48">
+          <div className="flex flex-col gap-8 md:basis-1/2">
+            <h2 className="text-3xl underline decoration-accent-foreground/70 decoration-2">
+              Don&apos;t See What You&apos;re Looking For?
+            </h2>
+
+            <div className="flex flex-col gap-4 font-[merriweather]">
+              <p className="text-lg">
+                Every piece we make is crafted with care and we know the perfect
+                gift sometimes calls for something truly one of a kind.
+              </p>
+              <p className="text-lg">
+                Browse our gallery of custom work for inspiration, start a
+                custom order based on our popular options, or contact us to
+                design something truly unique.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row justify-between gap-4 md:gap-6 w-full">
+              <Button asChild variant="mutedDefault" className="basis-1/2">
+                <Link href="/shop/collections">Browse Our Custom Work</Link>
+              </Button>
+              <Button asChild className="basis-1/2">
+                <Link href="/shop/collections">Customize Your Gift</Link>
+              </Button>
+            </div>
+          </div>
+
+          <Separator className="md:hidden" />
+
+          <div className="flex flex-col gap-4 md:gap-8 md:basis-1/2 -mt-2 md:mt-0">
+            <h2 className="text-3xl underline decoration-accent-foreground/70 decoration-2">
+              Contact Us
+            </h2>
+            <ContactUsForm />
+          </div>
+        </div>
       </section>
     </main>
   );
