@@ -111,7 +111,7 @@ export default function Home() {
       </section>
 
       {/* Best Sellers */}
-      <section className="flex flex-col py-12 md:py-20 gap-16">
+      <section className="flex flex-col py-12 md:py-20 gap-12 md:gap-16">
         <div className="flex flex-col gap-2 sm:flex-row w-full justify-between md:items-center">
           <h2 className="text-3xl underline decoration-accent-foreground/70 decoration-2">
             Best Sellers
