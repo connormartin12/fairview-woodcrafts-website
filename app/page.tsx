@@ -14,15 +14,14 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Home() {
   return (
-    <main className="font-inter flex flex-col w-full gap-24 my-16">
+    <main className="font-inter flex flex-col w-full">
       {/* Hero */}
-      <section className="flex flex-col md:flex-row gap-16 md:gap-8 text-center md:text-left w-full justify-between items-center">
-        <div className="flex flex-col gap-4 items-center md:items-baseline">
+      <section className="flex flex-col md:flex-row py-12 md:py-20 gap-16 md:gap-8 text-left w-full justify-between items-center">
+        <div className="flex flex-col gap-4 items-center sm:items-baseline">
           <h1 className="text-5xl">
-            Laser-Engraved Wooden Gifts, <br />
-            Personalized with Care
+            Laser-Engraved Wooden Gifts, Personalized with Care
           </h1>
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-fit">
             <Button asChild variant="mutedDefault" className="text-md">
               <Link href="/custom-order">Personalize Your Gift</Link>
             </Button>
@@ -41,7 +40,7 @@ export default function Home() {
       </section>
 
       {/* Featured Collections */}
-      <section className="bg-secondary w-screen -mx-[calc((100vw-100%)/2)] py-16">
+      <section className="bg-secondary w-screen -mx-[calc((100vw-100%)/2)] py-12 md:py-20">
         <div className="flex flex-col max-w-7xl mx-auto px-6 gap-16">
           <div className="flex flex-col gap-2 sm:flex-row w-full justify-between md:items-center">
             <h2 className="text-3xl underline decoration-accent-foreground/70 decoration-2">
@@ -112,7 +111,7 @@ export default function Home() {
       </section>
 
       {/* Best Sellers */}
-      <section className="flex flex-col gap-16">
+      <section className="flex flex-col py-12 md:py-20 gap-16">
         <div className="flex flex-col gap-2 sm:flex-row w-full justify-between md:items-center">
           <h2 className="text-3xl underline decoration-accent-foreground/70 decoration-2">
             Best Sellers
