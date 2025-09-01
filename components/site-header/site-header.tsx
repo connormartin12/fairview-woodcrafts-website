@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/sheet";
 import useBreakPoint from "@/lib/use-breakpoint";
 import clsx from "clsx";
+import { Separator } from "@/components/ui/separator";
 
 export default function SiteHeader() {
   const isDesktop = useBreakPoint(768);
@@ -85,7 +86,7 @@ export default function SiteHeader() {
           )}
         </div>
       </div>
-      <span className="w-full h-[2px] bg-border" />
+      <Separator className="shadow-xs" />
     </header>
   );
 }

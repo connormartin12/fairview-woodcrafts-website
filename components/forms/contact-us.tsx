@@ -27,7 +27,7 @@ const contactUsSchema = z.object({
   email: z.email(),
   message: z
     .string()
-    .min(10, "Message should have at least 10 characters")
+    .min(10, "Message should be at least 10 characters long")
     .max(2000, "Message is too long"),
 });
 

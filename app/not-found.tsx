@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <>
       <h2 className="text-3xl my-6">404 - Page not found</h2>
-      <Button asChild>
+      <Button asChild className="w-fit">
         <Link href="/">Go Home</Link>
       </Button>
     </>
