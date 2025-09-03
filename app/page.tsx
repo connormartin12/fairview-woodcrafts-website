@@ -16,7 +16,7 @@ import { Separator } from "@/components/ui/separator";
 import { supabase } from "@/utils/supabase/client";
 
 export default async function Home() {
-  const { data, error } = await supabase.from("products").select();
+  const { data } = await supabase.from("products").select();
   console.log(data);
 
   return (
