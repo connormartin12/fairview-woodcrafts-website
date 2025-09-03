@@ -44,10 +44,8 @@ export default function Home() {
       {/* Featured Collections */}
       <section className="bg-secondary w-screen -mx-[calc((100vw-100%)/2)] py-12 md:py-20">
         <div className="flex flex-col max-w-7xl mx-auto px-6 gap-16">
-          <div className="flex flex-col gap-2 sm:flex-row w-full justify-between md:items-center">
-            <h2 className="text-3xl underline decoration-accent-foreground/70 decoration-2">
-              Featured Collections
-            </h2>
+          <div className="flex flex-col gap-4 sm:flex-row w-full justify-between md:items-center">
+            <h2 className="text-3xl">Featured Collections</h2>
             <Button asChild>
               <Link href="/shop/collections">
                 View All Collections <ArrowRight />
@@ -55,10 +53,10 @@ export default function Home() {
             </Button>
           </div>
 
-          <div className="flex flex-wrap lg:flex-row w-full gap-8 justify-center md:justify-between md:px-24">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:flex-row w-full gap-12 justify-center md:justify-between md:px-24">
             <Link href="/shop/collections/cards">
               <div className="flex flex-col items-center gap-4">
-                <div className="h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
+                <div className="h-[120px] w-[120px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
                   <Image
                     src="/teacher-beard-card.webp"
                     alt="Camping card thumbnail"
@@ -71,7 +69,7 @@ export default function Home() {
             </Link>
             <Link href="/shop/collections/cards">
               <div className="flex flex-col items-center gap-4">
-                <div className="h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
+                <div className="h-[120px] w-[120px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
                   <Image
                     src="/teacher-beard-card.webp"
                     alt="Camping card thumbnail"
@@ -84,7 +82,7 @@ export default function Home() {
             </Link>
             <Link href="/shop/collections/cards">
               <div className="flex flex-col items-center gap-4">
-                <div className="h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
+                <div className="h-[120px] w-[120px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
                   <Image
                     src="/teacher-beard-card.webp"
                     alt="Camping card thumbnail"
@@ -97,7 +95,7 @@ export default function Home() {
             </Link>
             <Link href="/shop/collections/cards">
               <div className="flex flex-col items-center gap-4">
-                <div className="h-[100px] w-[100px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
+                <div className="h-[120px] w-[120px] md:h-[150px] md:w-[150px] rounded-full bg-secondary relative">
                   <Image
                     src="/teacher-beard-card.webp"
                     alt="Camping card thumbnail"
@@ -114,10 +112,8 @@ export default function Home() {
 
       {/* Best Sellers */}
       <section className="flex flex-col py-12 md:py-20 gap-12 md:gap-16">
-        <div className="flex flex-col gap-2 sm:flex-row w-full justify-between md:items-center">
-          <h2 className="text-3xl underline decoration-accent-foreground/70 decoration-2">
-            Best Sellers
-          </h2>
+        <div className="flex flex-col gap-4 sm:flex-row w-full justify-between md:items-center">
+          <h2 className="text-3xl">Best Sellers</h2>
           <Button asChild variant="mutedDefault">
             <Link href="/shop/collections">
               Shop All Items <ArrowRight />
@@ -268,7 +264,7 @@ export default function Home() {
       <section className="bg-secondary w-screen -mx-[calc((100vw-100%)/2)] py-12 md:py-20">
         <div className="flex flex-col md:flex-row md:justify-between max-w-7xl mx-auto px-6 gap-12 md:gap-24 lg:gap-48">
           <div className="flex flex-col gap-8 md:basis-1/2">
-            <h2 className="text-3xl underline decoration-accent-foreground/70 decoration-2">
+            <h2 className="text-3xl">
               Don&apos;t See What You&apos;re Looking For?
             </h2>
 
@@ -297,9 +293,7 @@ export default function Home() {
           <Separator className="md:hidden" />
 
           <div className="flex flex-col gap-4 md:gap-8 md:basis-1/2 -mt-2 md:mt-0">
-            <h2 className="text-3xl underline decoration-accent-foreground/70 decoration-2">
-              Contact Us
-            </h2>
+            <h2 className="text-3xl">Contact Us</h2>
             <ContactUsForm />
           </div>
         </div>
