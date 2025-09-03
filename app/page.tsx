@@ -13,8 +13,12 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import ContactUsForm from "@/components/forms/contact-us";
 import { Separator } from "@/components/ui/separator";
+import { supabase } from "@/utils/supabase/client";
 
-export default function Home() {
+export default async function Home() {
+  const { data, error } = await supabase.from("products").select();
+  console.log(data);
+
   return (
     <main className="font-inter flex flex-col w-full">
       {/* Hero */}
