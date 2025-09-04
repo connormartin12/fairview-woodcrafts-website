@@ -14,7 +14,7 @@ export default function SiteFooter() {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-12 my-4">
         <section className="flex flex-col gap-2">
           <h4>Shop</h4>
-          <div className="text-sm flex flex-col gap-1">
+          <div className="text-sm flex flex-col gap-1 *:hover:underline">
             <Link href="/">Home</Link>
             <Link href="/shop/all">Shop All</Link>
             <Link href="/shop/collections">Shop Collections</Link>
@@ -24,7 +24,7 @@ export default function SiteFooter() {
         </section>
         <section className="flex flex-col gap-2">
           <h4>Company</h4>
-          <div className="text-sm flex flex-col gap-1">
+          <div className="text-sm flex flex-col gap-1 *:hover:underline">
             <Link href="/about">About Us</Link>
             <Link href="/contact-us">Contact Us</Link>
             <Link href="/faq">FAQ</Link>
@@ -32,7 +32,7 @@ export default function SiteFooter() {
         </section>
         <section className="flex flex-col gap-2">
           <h4>Customer Service</h4>
-          <div className="text-sm flex flex-col gap-1">
+          <div className="text-sm flex flex-col gap-1 *:hover:underline">
             <Link href="/faq/#">Shipping & Returns</Link>
             <Link href="/faq/#">Order Tracking</Link>
             <Link href="/faq/#">Gift Options</Link>
