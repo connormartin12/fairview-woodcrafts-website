@@ -39,12 +39,12 @@ export default function SiteHeader() {
       ref={headerRef}
       className="sticky top-0 bg-background z-99 flex flex-col items-center w-screen -mx-[calc((100vw-100%)/2)]"
     >
-      <div className="flex items-center justify-between py-1 max-w-7xl w-full mx-auto px-6">
+      <div className="flex items-center justify-between py-2 max-w-7xl w-full mx-auto px-6">
         <Link href="/">
           <Image
-            src="/fw_logo.webp"
-            width={isDesktop ? 70 : 40}
-            height={isDesktop ? 70 : 40}
+            src="/fw-logo.webp"
+            width={isDesktop ? 60 : 40}
+            height={isDesktop ? 60 : 40}
             alt="Fairview Woodcrafts Logo"
           />
         </Link>
