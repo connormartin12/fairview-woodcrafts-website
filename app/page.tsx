@@ -13,10 +13,11 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import ContactUsForm from "@/components/forms/contact-us";
 import { Separator } from "@/components/ui/separator";
-import { supabase } from "@/utils/supabase/client";
+import { createClient } from "@/utils/supabase/client";
 
 export default async function Home() {
-  const { data } = await supabase.from("products").select();
+  const supabase = createClient();
+  const { data, error } = await supabase.from("products").select();
   console.log(data);
 
   return (
