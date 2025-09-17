@@ -12,11 +12,20 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 
-export default function NavLinks({ mobile = false }: { mobile?: boolean }) {
+export default function NavLinks({
+  className,
+  mobile = false,
+}: {
+  className?: string;
+  mobile?: boolean;
+}) {
   return (
     <NavigationMenu
       viewport={false}
-      className="flex flex-col md:flex-row justify-start md:justify-center"
+      className={cn(
+        "flex flex-col md:flex-row justify-start md:justify-center",
+        className
+      )}
     >
       <NavigationMenuList className="flex flex-col md:flex-row items-baseline justify-start">
         <NavigationMenuItem>

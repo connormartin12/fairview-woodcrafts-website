@@ -40,9 +40,9 @@ export default async function Home() {
         <Image
           src="/it-is-well-sign.webp"
           alt="Hero Image"
+          priority
           width={400}
           height={400}
-          priority
         />
       </section>
 
@@ -134,7 +134,7 @@ export default async function Home() {
                   <CardContent className="flex px-0 justify-center items-center">
                     <AspectRatio ratio={4 / 3}>
                       <Image
-                        src="/puzzle_piece.webp"
+                        src="/bigfoot_card_4x3.webp"
                         alt="Puzzle piece"
                         fill
                         className="object-cover"
@@ -143,9 +143,9 @@ export default async function Home() {
                   </CardContent>
                   <CardFooter className="flex-col items-baseline gap-2">
                     <p className="font-semibold w-full truncate">
-                      Father&apos;s Day Puzzle Piece Gift Card
+                      Our Love is Legendary Wooden Anniversary Card
                     </p>
-                    <p className="text-primary font-semibold">$24.00</p>
+                    <p className="text-primary font-semibold">$15.00</p>
                   </CardFooter>
                 </Card>
               </Link>
@@ -156,8 +156,8 @@ export default async function Home() {
                   <CardContent className="flex px-0 justify-center items-center">
                     <AspectRatio ratio={4 / 3}>
                       <Image
-                        src="/camping-card.webp"
-                        alt="Puzzle piece"
+                        src="/camping_card_4x3.webp"
+                        alt="Camping card"
                         fill
                         className="object-cover"
                       />
@@ -178,7 +178,7 @@ export default async function Home() {
                   <CardContent className="flex px-0 justify-center items-center">
                     <AspectRatio ratio={4 / 3}>
                       <Image
-                        src="/puzzle_piece.webp"
+                        src="/puzzle_piece_4x3.webp"
                         alt="Puzzle piece"
                         fill
                         className="object-cover"
@@ -200,7 +200,7 @@ export default async function Home() {
                   <CardContent className="flex px-0 justify-center items-center">
                     <AspectRatio ratio={4 / 3}>
                       <Image
-                        src="/puzzle_piece.webp"
+                        src="/cat_cutting_board_4x3.webp"
                         alt="Puzzle piece"
                         fill
                         className="object-cover"
@@ -209,9 +209,10 @@ export default async function Home() {
                   </CardContent>
                   <CardFooter className="flex-col items-baseline gap-2">
                     <p className="font-semibold w-full truncate">
-                      Father&apos;s Day Puzzle Piece Gift
+                      Cat Cutting Board Gift | &quot;Are you going to eat
+                      that?&quot;
                     </p>
-                    <p className="text-primary font-semibold">$24.00</p>
+                    <p className="text-primary font-semibold">$39.00</p>
                   </CardFooter>
                 </Card>
               </Link>
@@ -222,7 +223,7 @@ export default async function Home() {
                   <CardContent className="flex px-0 justify-center items-center">
                     <AspectRatio ratio={4 / 3}>
                       <Image
-                        src="/puzzle_piece.webp"
+                        src="/puzzle_piece_4x3.webp"
                         alt="Wooden puzzle piece father's day gift"
                         fill
                         className="object-cover"
@@ -244,7 +245,7 @@ export default async function Home() {
                   <CardContent className="flex px-0 justify-center items-center">
                     <AspectRatio ratio={4 / 3}>
                       <Image
-                        src="/puzzle_piece.webp"
+                        src="/puzzle_piece_4x3.webp"
                         alt="Puzzle piece"
                         fill
                         className="object-cover"

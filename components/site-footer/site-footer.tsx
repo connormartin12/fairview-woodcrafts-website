@@ -57,7 +57,7 @@ export default function SiteFooter() {
         </section>
         <section className="flex flex-col gap-6 col-span-2 lg:col-span-2 sm:col-start-1 sm:row-start-2 lg:row-start-1 lg:col-start-5">
           <div className="flex flex-col gap-2">
-            <h4>Be the first to know</h4>
+            <h4>Be the First to Know</h4>
             <p className="text-sm">
               Stay up to date on our latest handcrafted gifts and seasonal
               deals.
